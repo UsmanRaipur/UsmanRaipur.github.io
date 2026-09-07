@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usman Khan — Procurement &amp; Supply Chain Professional</title>
+<meta name="description" content="Usman Khan — Assistant General Manager, Procurement &amp; Store Operations. 18 years of experience in civil and mechanical materials procurement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #efeee9;
+    --bg-alt: #e6e3da;
+    --ink: #1a1d1c;
+    --ink-soft: #4a4c47;
+    --steel: #2c4a5c;
+    --steel-soft: #4f6d7e;
+    --rust: #a85c32;
+    --line: #c9c6ba;
+    --paper: #f7f6f2;
+    --max: 860px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 { font-family: 'Zilla Slab', Georgia, serif; color: var(--ink); margin: 0; }
+  a { color: var(--steel); }
+  ::selection { background: var(--steel); color: var(--paper); }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(247,246,242,0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: var(--max); margin: 0 auto; padding: 14px 28px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .nav-mark {
+    font-family: 'Zilla Slab', serif; font-weight: 700; font-size: 1.2rem;
+    color: var(--steel); text-decoration: none; letter-spacing: 0.02em;
+  }
+  .nav-links { display: flex; gap: 22px; flex-wrap: wrap; }
+  .nav-links a {
+    color: var(--ink-soft); text-decoration: none; font-size: 0.9rem;
+  }
+  .nav-links a:hover { color: var(--steel); }
+  .nav-cta {
+    border: 1px solid var(--steel); color: var(--steel) !important;
+    padding: 6px 14px; font-size: 0.85rem;
+  }
+  .nav-cta:hover { background: var(--steel); color: var(--paper) !important; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    background:
+      linear-gradient(var(--paper), var(--paper)),
+      repeating-linear-gradient(0deg, rgba(44,74,92,0.06) 0 1px, transparent 1px 32px),
+      repeating-linear-gradient(90deg, rgba(44,74,92,0.06) 0 1px, transparent 1px 32px);
+    border-bottom: 3px solid var(--steel);
+    padding: 60px 0 0;
+    overflow: hidden;
+  }
+  .hero-inner { display: flex; align-items: flex-start; gap: 36px; flex-wrap: wrap; padding-bottom: 40px; }
+  .hero-photo {
+    width: 132px; height: 132px; object-fit: cover;
+    border: 3px solid var(--steel); padding: 4px; background: var(--paper); flex-shrink: 0;
+  }
+  .hero-text { flex: 1; min-width: 260px; }
+  .hero-kicker {
+    color: var(--rust); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.02em; margin-bottom: 10px;
+  }
+  .hero-text h1 {
+    font-size: 2.1rem; font-weight: 600; line-height: 1.25; max-width: 20ch;
+  }
+  .hero-name {
+    display: block; font-size: 1.05rem; color: var(--steel-soft); font-weight: 500; margin-top: 14px;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  .stat-row {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--line);
+  }
+  .stat {
+    padding: 22px 28px; border-right: 1px solid var(--line);
+  }
+  .stat:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Zilla Slab', serif; font-size: 2rem; font-weight: 700; color: var(--steel);
+  }
+  .stat-label { font-size: 0.82rem; color: var(--ink-soft); margin-top: 4px; }
+
+  @media (max-width: 600px) {
+    .stat-row { grid-template-columns: 1fr; }
+    .stat { border-right: none; border-bottom: 1px solid var(--line); }
+    .stat:last-child { border-bottom: none; }
+  }
+
+  /* ---------- Sections ---------- */
+  section { padding: 56px 0; }
+  section + section { border-top: 1px solid var(--line); }
+  .alt { background: var(--bg-alt); }
+
+  .section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 30px; }
+  .section-head h2 { font-size: 1.5rem; font-weight: 600; white-space: nowrap; }
+  .section-head::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .lede { font-size: 1.05rem; color: var(--ink-soft); max-width: 64ch; }
+
+  /* ---------- Experience timeline ---------- */
+  .timeline { border-left: 2px solid var(--line); margin-left: 6px; padding-left: 30px; }
+  .role { position: relative; padding-bottom: 34px; }
+  .role:last-child { padding-bottom: 0; }
+  .role::before {
+    content: ""; position: absolute; left: -37px; top: 5px;
+    width: 12px; height: 12px; background: var(--steel);
+    border: 3px solid var(--bg); box-shadow: 0 0 0 1px var(--line);
+  }
+  .role.current::before { background: var(--rust); }
+
+  .role-dates { font-size: 0.82rem; color: var(--rust); font-weight: 500; }
+  .role-title { font-family: 'Zilla Slab', serif; font-size: 1.2rem; font-weight: 600; margin-top: 3px; }
+  .role-org { color: var(--steel-soft); font-size: 0.95rem; margin-top: 2px; }
+  .role ul { margin: 12px 0 0; padding-left: 18px; }
+  .role li { margin-bottom: 6px; }
+  .role p.role-note { margin: 10px 0 0; color: var(--ink-soft); }
+
+  /* ---------- Icon cards ---------- */
+  .icon-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px;
+    background: var(--line); border: 1px solid var(--line);
+  }
+  @media (max-width: 600px) { .icon-grid { grid-template-columns: 1fr; } }
+  .icon-card {
+    background: var(--paper); padding: 22px 24px; display: flex; gap: 16px; align-items: flex-start;
+  }
+  .icon-card svg { flex-shrink: 0; width: 26px; height: 26px; margin-top: 2px; }
+  .icon-card h3 { font-size: 1rem; font-weight: 600; font-family: 'IBM Plex Sans', sans-serif; }
+  .icon-card p { margin: 4px 0 0; font-size: 0.88rem; color: var(--ink-soft); }
+
+  /* ---------- Tools ---------- */
+  .tool-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 0.95rem;
+  }
+  .tool-row:last-child { border-bottom: none; }
+  .dots { display: flex; gap: 4px; }
+  .dot { width: 8px; height: 8px; background: var(--line); }
+  .dot.filled { background: var(--steel); }
+
+  /* ---------- Achievements ---------- */
+  .achieve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 600px) { .achieve-grid { grid-template-columns: 1fr; } }
+  .achieve {
+    border: 1px solid var(--line); padding: 22px 24px; background: var(--paper);
+  }
+  .achieve-num { font-family: 'Zilla Slab', serif; font-size: 1.8rem; font-weight: 700; color: var(--rust); }
+  .achieve h3 { font-size: 1rem; font-weight: 600; color: var(--ink); margin-top: 6px; }
+  .achieve p { margin: 6px 0 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .chip { border: 1px solid var(--steel); color: var(--steel); padding: 5px 14px; font-size: 0.85rem; }
+
+  /* ---------- Education ---------- */
+  .edu-row { padding: 16px 0; border-top: 1px dashed var(--line); }
+  .edu-row:first-child { border-top: none; padding-top: 0; }
+  .edu-row .deg { font-weight: 600; }
+  .edu-row .school { color: var(--ink-soft); font-size: 0.92rem; margin-top: 2px; }
+
+  /* ---------- Footer / Contact ---------- */
+  footer { background: var(--steel); color: var(--paper); padding: 56px 0 40px; }
+  footer h2 { color: var(--paper); }
+  footer .section-head::after { background: rgba(247,246,242,0.25); }
+  footer .lede { color: rgba(247,246,242,0.82); }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 26px; }
+  .contact-row a {
+    color: var(--paper); text-decoration: none; border-bottom: 1px solid rgba(247,246,242,0.4);
+    font-size: 0.98rem; padding-bottom: 2px;
+  }
+  .contact-row a:hover { border-color: #fff; }
+  .contact-row span { color: rgba(247,246,242,0.75); font-size: 0.98rem; }
+  .foot-note { margin-top: 34px; font-size: 0.82rem; color: rgba(247,246,242,0.5); }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  :focus-visible { outline: 2px solid var(--rust); outline-offset: 2px; }
+
+  /* one orchestrated entrance */
+  .hero-inner, .stat-row { animation: rise 0.6s ease both; }
+  .stat-row { animation-delay: 0.12s; }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="#top">UK</a>
+    <div class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#education">Education</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero" id="top">
+  <div class="wrap hero-inner">
+    <img class="hero-photo" src="images/usman.jpg" alt="Portrait of Usman Khan">
+    <div class="hero-text">
+      <div class="hero-kicker">Raipur, Chhattisgarh, India</div>
+      <h1>18 years keeping construction projects supplied — on time, on budget.</h1>
+      <span class="hero-name">Usman Khan · Assistant General Manager, Procurement &amp; Store Operations</span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stat-row">
+      <div class="stat"><div class="stat-num">18+</div><div class="stat-label">Years in procurement &amp; store operations</div></div>
+      <div class="stat"><div class="stat-num">30%</div><div class="stat-label">Supplier performance gain from a new evaluation system</div></div>
+      <div class="stat"><div class="stat-num">20%</div><div class="stat-label">Faster purchase-order processing</div></div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <section id="about">
+    <div class="wrap">
+      <p class="lede">
+        Usman sources and manages civil and mechanical materials — steel, cement, TMT bars, valves, pipes,
+        machinery parts — for large construction and infrastructure projects. Over 18 years he has moved from
+        store incharge to purchase manager to Assistant General Manager, and along the way built a habit of
+        the same result wherever he lands: costs come down, processing gets faster, and projects stay supplied.
+        He's currently leading end-to-end procurement at Real Spaces Infraventures in Raipur.
+      </p>
+    </div>
+  </section>
+
+  <section id="experience" class="alt">
+    <div class="wrap">
+      <div class="section-head"><h2>Experience</h2></div>
+      <div class="timeline">
+
+        <div class="role current">
+          <div class="role-dates">Jul 2026 – Present</div>
+          <div class="role-title">Assistant General Manager</div>
+          <div class="role-org">Real Spaces Infraventures Pvt. Ltd., Raipur</div>
+          <ul>
+            <li>Lead end-to-end procurement across purchase, store, and contracts for civil and mechanical materials.</li>
+            <li>Manage vendor sourcing, negotiation, and contract finalisation for cost efficiency and on-time delivery.</li>
+            <li>Oversee inventory control, stock ageing, GRN processing, and 5-S practices to cut wastage and errors.</li>
+            <li>Coordinate with project, engineering, and finance teams on material planning and budgeting.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-dates">Jul 2024 – Jul 2026</div>
+          <div class="role-title">Purchase Manager</div>
+          <div class="role-org">Swadesh Metallics Pvt. Ltd., Raipur</div>
+          <ul>
+            <li>Managed end-to-end procurement of civil and mechanical materials, from sourcing to delivery.</li>
+            <li>Built vendor relationships that balanced quality, delivery time, and cost.</li>
+            <li>Negotiated purchase orders and contracts, delivering measurable cost savings.</li>
+            <li>Tracked inventory and deliveries through ERP systems.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-dates">May 2022 – Jul 2024</div>
+          <div class="role-title">Purchase Manager</div>
+          <div class="role-org">Sunil Kumar Agrawal LLP, Naya Raipur</div>
+          <ul>
+            <li>Managed procurement for the construction of the Chief Minister's House, Minister's Bungalow, Raj Bhawan, and IAS Officer's Bungalow.</li>
+            <li>Cut purchase-order acknowledgment time by 20% and Goods Receipt errors by 15%.</li>
+            <li>Led a team of 10 store and tooling personnel.</li>
+            <li>Introduced a vendor evaluation system that raised supplier performance by 30% and cut material costs by 10%.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-dates">Dec 2021 – May 2022</div>
+          <div class="role-title">Assistant Purchase Manager</div>
+          <div class="role-org">Avinash Developer's Pvt. Ltd., Raipur</div>
+          <ul>
+            <li>Managed procurement across multiple construction sites and led a team of 8 store personnel.</li>
+            <li>Negotiated supplier contracts, cutting material costs by 15%.</li>
+            <li>Built a supplier performance tracking system that raised supplier ratings by 20%.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-dates">May 2020 – Dec 2021</div>
+          <div class="role-title">Purchase Manager</div>
+          <div class="role-org">Sun &amp; Sun Inframetric, Raipur</div>
+          <p class="role-note">Managed procurement across multiple construction sites and oversaw store personnel.</p>
+        </div>
+
+        <div class="role">
+          <div class="role-dates">Jan 2017 – May 2020</div>
+          <div class="role-title">Senior Purchase Officer</div>
+          <div class="role-org">Avinash Developer's Pvt. Ltd., Raipur</div>
+          <p class="role-note">Managed procurement across multiple construction sites and oversaw store personnel.</p>
+        </div>
+
+        <div class="role">
+          <div class="role-dates">Jun 2014 – Jan 2017</div>
+          <div class="role-title">Store Incharge</div>
+          <div class="role-org">Avinash Developer's Pvt. Ltd., Raipur</div>
+          <p class="role-note">Introduced a stricter inventory-control process, reducing dead stock compared with the prior three years.</p>
+        </div>
+
+        <div class="role">
+          <div class="role-dates">Apr 2006 – Jun 2014</div>
+          <div class="role-title">Store Incharge</div>
+          <div class="role-org">Raza Coloniser Pvt. Ltd., Raipur</div>
+          <p class="role-note">Managed site inventory.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="wrap">
+      <div class="section-head"><h2>Core expertise</h2></div>
+      <div class="icon-grid">
+        <div class="icon-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2c4a5c" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" /><path d="M3 7l9-4 9 4" /><line x1="9" y1="11" x2="9" y2="16" /><line x1="15" y1="11" x2="15" y2="16" /></svg>
+          <div><h3>Procurement planning</h3><p>BOM/BOQ coordination with site teams to plan material needs and budgets.</p></div>
+        </div>
+        <div class="icon-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2c4a5c" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" /><line x1="8" y1="8" x2="16" y2="8" /><line x1="8" y1="12" x2="16" y2="12" /><path d="M8 16l2 2 4-4" /></svg>
+          <div><h3>Vendor negotiation</h3><p>Sourcing and contract terms that balance cost, quality, and delivery time.</p></div>
+        </div>
+        <div class="icon-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2c4a5c" stroke-width="1.6"><rect x="3" y="10" width="18" height="10" /><path d="M3 10l4-6h10l4 6" /><line x1="12" y1="10" x2="12" y2="20" /></svg>
+          <div><h3>Store &amp; inventory</h3><p>Stock ageing, GRN processing, and 5-S practice to cut wastage and errors.</p></div>
+        </div>
+        <div class="icon-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2c4a5c" stroke-width="1.6"><line x1="5" y1="20" x2="5" y2="10" /><line x1="12" y1="20" x2="12" y2="5" /><line x1="19" y1="20" x2="19" y2="13" /></svg>
+          <div><h3>Vendor evaluation</h3><p>Performance tracking systems that lift supplier ratings and reliability.</p></div>
+        </div>
+        <div class="icon-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2c4a5c" stroke-width="1.6"><rect x="1" y="9" width="13" height="8" /><path d="M14 12h4l3 3v2h-7z" /><circle cx="5.5" cy="19" r="1.6" /><circle cx="17.5" cy="19" r="1.6" /></svg>
+          <div><h3>Logistics coordination</h3><p>Transport and delivery follow-up so materials land on site on schedule.</p></div>
+        </div>
+        <div class="icon-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2c4a5c" stroke-width="1.6"><rect x="6" y="3" width="12" height="18" /><rect x="9" y="1.5" width="6" height="3" /><line x1="9" y1="9" x2="15" y2="9" /><line x1="9" y1="13" x2="15" y2="13" /><line x1="9" y1="17" x2="13" y2="17" /></svg>
+          <div><h3>Reporting</h3><p>Monthly procurement reports covering stock ageing and dead stock.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head"><h2>Tools</h2></div>
+      <div class="tool-row"><span>Microsoft Excel</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></div>
+      <div class="tool-row"><span>ERP – Farvision</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></div>
+      <div class="tool-row"><span>Microsoft Word</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></div>
+      <div class="tool-row"><span>Microsoft Access</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span></div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="wrap">
+      <div class="section-head"><h2>Achievements</h2></div>
+      <div class="achieve-grid">
+        <div class="achieve">
+          <div class="achieve-num">2018</div>
+          <h3>Best Purchase Officer Award</h3>
+          <p>Recognised for performance in vendor negotiation and procurement efficiency.</p>
+        </div>
+        <div class="achieve">
+          <div class="achieve-num">3yr</div>
+          <h3>Inventory control turnaround</h3>
+          <p>Introduced a stricter store-control process that cut dead stock compared with the prior three years.</p>
+        </div>
+      </div>
+      <div class="chips">
+        <span class="chip">Hard-working</span>
+        <span class="chip">Detail-oriented</span>
+        <span class="chip">Resourceful</span>
+        <span class="chip">Confident</span>
+        <span class="chip">Collaborative</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="alt">
+    <div class="wrap">
+      <div class="section-head"><h2>Education</h2></div>
+      <div class="edu-row"><div class="deg">B.Com.</div><div class="school">Pt. Ravishankar Shukla University, 2007</div></div>
+      <div class="edu-row"><div class="deg">HSC, Commerce</div><div class="school">Shree Gujarati Eng. Med. Higher Sec. School, Raipur, 2004</div></div>
+      <div class="edu-row"><div class="deg">SSC</div><div class="school">CGBSE, Shree Gujarati Eng. Med. Higher Sec. School, Raipur, 2002</div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="section-head"><h2>Get in touch</h2></div>
+    <p class="lede">Open to procurement, purchase, and store-operations roles. Reach out by email or phone — happy to share full references on request.</p>
+    <div class="contact-row">
+      <a href="mailto:ubushraja786@gmail.com">ubushraja786@gmail.com</a>
+      <a href="tel:+919584492000">+91 95844 92000</a>
+      <span>Raipur, Chhattisgarh, India</span>
+    </div>
+    <div class="foot-note">© 2026 Usman Khan</div>
+  </div>
+</footer>
+
+</body>
+</html>
