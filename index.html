@@ -98,7 +98,7 @@
   }
   .hero-inner { display: flex; align-items: flex-start; gap: 36px; flex-wrap: wrap; padding-bottom: 40px; }
   .hero-photo {
-    width: 132px; height: 132px; object-fit: cover;
+    width: clamp(140px, 18vw, 220px); height: clamp(140px, 18vw, 220px); object-fit: cover;
     border: 3px solid var(--steel); padding: 4px; background: var(--paper); flex-shrink: 0;
   }
   .hero-text { flex: 1; min-width: 260px; }
@@ -272,12 +272,12 @@
 
 <div class="hero" id="top">
   <div class="wrap hero-inner">
-    <img class="hero-photo" src="images/usman.jpg" alt="Portrait of Usman Khan">
     <div class="hero-text">
       <div class="hero-kicker">Raipur, Chhattisgarh, India</div>
       <h1>20 years keeping construction projects supplied — on time, on budget.</h1>
       <span class="hero-name">Usman Khan · Assistant General Manager, Procurement &amp; Store Operations</span>
     </div>
+    <img class="hero-photo" src="images/usman.jpg" alt="Portrait of Usman Khan">
   </div>
   <div class="wrap">
     <div class="stat-row">
